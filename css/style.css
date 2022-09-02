@@ -1,0 +1,674 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+
+}
+.sidebar-left {
+    grid-area: sidebar-left;
+    width: 20%;
+    height: 125vh;
+}
+.main{
+    grid-area: main;
+    width: 80%;
+    height: 125vh;
+}
+.logo-container{
+    display: flex;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.name{
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.name p{
+    font-size: 12px;
+    margin-top: -15px;
+}
+.sidebar-icons{
+    width: 100%;
+    padding: 20px;
+}
+.group-icon{
+    display: flex;
+    gap: 25px;
+    padding: 8px;
+}
+.advertise{
+    width: 70%;
+    height: 200px;
+    padding: 2px;
+    background: #e8cdcd;
+    border-radius: 10px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/15/16/23/night-3084237_960_720.jpg");
+    background-size: contain;
+}
+.collect, 
+.earn{
+    width: 70%;
+    font-size: 14px;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+
+}
+.button {
+    width: 53%;
+    display: flex;
+    background: #fff;
+    border-radius: 40px;
+    padding: 3px;
+    margin: 80px 40px 0px 15px;
+}
+.button{
+    margin-top: -1%;
+    width: 80%;
+}
+.button button{
+    border: none;
+    background: none;
+
+}
+.button i{
+    font-size: 18px;   
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.prifile-user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.date{
+    display: flex;
+    background: #fff;
+    border-radius: 40px;
+    width: 14%;
+    height: 25px;
+    padding: 5px;
+    margin: 20px;
+    justify-content: space-between;
+}
+input{
+    margin-top: 3px;
+    border: none;
+}
+.time{
+    display: flex;
+    background: #fff;
+    margin: 20px;
+    border-radius: 40px;
+    width: 14%;
+    height: 25px;
+    padding: 5px;
+    justify-content: space-around;
+}
+.search{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    width: 40%;
+    height:25px;
+    margin: 20px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 40px;
+}
+.input-search{
+    width: 100%;
+}
+.input-search input{
+    width: 100%;
+    outline: none;
+}
+.nav-icon-search i{
+    margin-top: 7px;
+}
+.input-search p{
+    color: #00000081;
+    margin-top: 9px;
+}
+.user{
+    width: 14%;
+    height: 15px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background: #fff;
+    border-radius: 40px;
+}
+.user button{
+    border: none;
+    background: none;
+    margin-top: -7px;
+}
+.user-button button{
+    background: #d1c9c9;
+    border-radius: 40px;
+    width: 50px;
+    padding: 8px;
+    margin-bottom: -2px;
+}
+.notification{
+    margin-top:20px;
+    background: #fff;
+    border-radius: 50%;
+     padding: 2px 5px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+.header{
+    display: flex;
+    width: 100%;
+}
+.header-left{
+    width: 80%;
+    height: 113vh;
+    /* background: #e6c8c8; */
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 20px;
+    text-align: center;
+}
+.seeall{
+    margin: 30px;
+    color: blue;
+    /* font-weight: bold; */
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    margin-top: -5%;
+}
+.favorite{
+    background: #fff;
+    border-radius: 40px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.favorite img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.favorite i,span{
+    font-size: 14px;
+    margin-top: 3px;
+}
+.stories{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 10px; */
+    margin-top: 10px;
+    width: 99%;
+}
+.one-story{
+    background: rgb(212, 139, 139);
+    width: 20%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.story-pic{
+    padding: 2px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/20/sunset-1807524_960_720.jpg");
+    background-size: cover;
+    border-radius: 7px;
+    height: 60%;
+    position: relative;
+}
+.story-item {
+    
+    color: #fff;
+    border-radius: 10px;
+}
+.story-item span{
+    margin-top: 5px;
+    float: right;
+    padding: 8px;
+    border-radius: 20px;
+    background: #000;
+}
+.play{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.puase i{
+    color: white;
+}
+.play-story button{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.bar-top{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.bar-center{
+    margin-top: -15%;
+}
+.bar-bottom{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-top: -15%;
+}
+.top-nft{
+    width: 90%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    margin-top: -2%;
+    border-radius: 10px;
+}
+.people-one-row{
+    width: 90%;
+    margin: auto;
+    background: rgb(222, 181, 181);
+    padding: 2px;
+    display: flex;
+    gap: 10px;
+}
+.one-acc{
+    width: 33%;
+    background: #dac6c6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.people-left{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+}
+.pep-proflie img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.profile-names{
+    margin-top: -10%;
+}
+.profile-names p{
+    color: #0b0b0bb9;
+    margin-top: -50%;
+    font-size: 14px;
+}
+.people-right{
+    margin-top: 5%;
+}
+.amount-left{
+    text-align: right;
+    padding: 5px;
+}
+.amount{
+    text-align: right;
+    margin-top: -20%;
+    padding: 5px;
+}
+.amount span{
+    margin-top: -50%;
+}
+.amount i{
+    font-size: 12px;
+    margin-top: -50%;
+}
+.header-right{
+    width: 20%;
+    height: 125vh;
+}
+.header-right-container{
+    width: 100%;
+    padding: 10px;
+}
+.balance{
+    width: 80%;
+    margin: 2px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.topup button{
+    width: 80%;
+    margin-left: 22px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(26, 217, 39);
+}
+.total p{
+    color: #000000a7;
+    font-size: 14px;
+}
+.total span{
+    color: #7ee028;
+}
+.trending-collect{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tre-coll{
+    margin-top: -5%;
+}
+.all span{
+    color: rgb(0, 102, 255);
+}
+.trending{
+    margin-top: -10px;
+    width: 98%;
+}
+.acc{
+    width: 90%;
+    margin-top: -20px;
+    border-radius: 20px;
+    background: #e1dede;
+}
+.acc-sender{
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.sender-left{
+    display: flex;
+    gap: 10px;
+}
+.sender-right .fisrtvdo {
+    margin-top: -20%;
+}
+.profile-sender img{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.message{
+    margin-top: 10px;
+}
+.project p{
+    font-size: 12px;
+    color: #000;
+}
+.money span{
+    color: #000000a5;
+    margin-top: -20px;
+}
+.last{
+    width: 90%;
+    height: 30vh;
+    margin-top: 3px;
+    box-sizing: border-box;
+    background: #e3d0d0;
+    border-radius: 20px;
+}
+.contain-picture{
+    height: 10vh;
+    display: flex;
+}
+.contain-pic{
+    padding: 5px;
+    width: 50%;
+}
+
+.small-pic{
+    background-image: url(../picture.jpg);
+    background-size: cover;
+    height: 80px;
+    border-radius: 7px;
+}
+.small-pic i{
+    margin-top: 45%;
+    color: #e3d0d0;
+}
+.name-pic h5{
+    margin-top: -1%;
+}
+@media(max-width:800px){
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidebar-left{
+        width: 15%;
+        height: 100vh;
+    }
+    .sidebar-icons{
+        padding: 0px;
+    }
+    .group-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        margin-top: -15%;
+    }
+    .peoples{
+        text-align: center;
+    }
+    .group-icon icons i{
+        text-align: center;
+    }
+    .advertise{
+        width: 70%;
+        height: 110px;
+        margin: 10px;
+    }
+    .main{
+        height: 150vh;
+        width: 79%;
+    }
+    .header-left{
+        width: 65%;
+    }
+    .header-right{
+        width: 30%;
+        height: 100vh;
+    }
+    .collect{
+        width:90%;
+        font-size: 10px;
+        margin: 1px;
+        font-weight: bold;
+    }
+    .earn{
+        width: 70%;
+        font-size: 9px;
+        margin: 1px;
+        font-weight: bold;
+        margin-top: -5%;
+    }
+    .button{
+        margin-top: -5%;
+        width: 70%;
+        padding: 0px;
+    }
+    .button button{
+        font-size: 5px;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-icon i{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .time{
+        padding-left: 20px;
+    }
+    .input-date input{
+        background: none;
+        width: 65%;
+    }
+    .input-time input{
+        width: 80%;
+    }
+    .input-search{
+        background: rgb(162, 156, 156);
+        width: 50px;
+    }
+    .user{
+        width: 20%;
+    }
+    .user button{
+        width: 10px;
+        font-size: 12px;
+        background: none;
+        margin-right: 25px;
+    }
+    .notification{
+        margin-right: 20px;
+    }
+    .prifile-user img{
+        width: 40px;
+        height: 40px;
+        margin-left: -40%;
+        margin-top: 30%;
+    }
+    .favorite span{
+        font-size: 8px;
+        padding: 1px;
+        text-align: left;
+        text-align: center;
+    }
+    .stories{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .one-story{
+        width: 40%;
+        margin: 10px;
+    }
+    .bar-bottom{
+        margin-top: 1px;
+    }
+    .bottom-left p{
+        margin-top: -10%;
+    }
+    .people{
+        height: 200px;
+        overflow: scroll;
+    }
+    #none{
+        display: none;
+    }
+    .one-acc{
+        width: 50%;
+    }
+    .tre-coll h4,span{
+        font-size: 10px;
+    }
+    .all {
+        margin-top: -8%;
+    }
+    .topup .button{
+        font-size: 6px;
+    }
+    .dollar,.fisrtvdo{
+        display: none;
+    }
+    .pic i{
+        margin-top: 80%;
+    }
+    .trending{
+        margin-top: 20px;
+    }
+    .trending-collect{
+        margin-bottom: 20px;
+    }
+    .last{
+        height: 23vh;
+        margin-top: 30px;
+    }
+}  
+@media(max-width:600px){
+    .sidebar-left{
+        width: 20%;
+    }
+    .advertise{
+        display: none;
+    }
+    .main{
+        width: 75%;
+    }
+    .nav-container{
+        background: #e0b9b9;
+
+    }
+    .date,.time,.input-search,.user{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-left{
+        width: 99%;
+    }
+    .one-story{
+        width: 40%;
+    }
+    .bar-bottom{
+        margin-top: 10px;
+    }
+    .header-right{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .header-right-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .trending-collect{
+        display: none;
+    }
+    .balance{
+        margin-left: -10px;
+        height: 24vh;
+    }
+    .last{
+        margin: -1px 0px 0px -15px;
+
+    }
+}
+
+
