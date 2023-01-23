@@ -14,7 +14,7 @@ body{
 }
 .main{
     grid-area: main;
-    width: 80%;
+    width: 79%;
     height: 125vh;
 }
 .logo-container{
